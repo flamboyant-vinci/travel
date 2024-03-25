@@ -1,26 +1,20 @@
-# README
+#TravelHub
+A Virtual guide for your travels across new cities!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#Updates
+[] Use HERE Maps API
+[] Displaying attractions with GeoJSONs
+[] Navigate between attractions in a city
+[] Demonstration - Deployment Pending
 
-Things you may want to cover:
+Future
+[] NLP based chat-bot
 
-* Ruby version
+#Case
+##Problem Statement:
+  Tourism and City Exploration: Design a website or mobile app using HERE Location Services and Mobile SDKs that offers guided tours, historical information, and    interactive maps for tourists exploring a city.
+##Solution Set:
+  A ruby on rails webapp tightly integrated with a database of tourist attractions.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# travel
-Intended for HERE Hackathon
+Intended for HERE Hackathon - APOGEE 2024
+(c) Prakhar Kumar
