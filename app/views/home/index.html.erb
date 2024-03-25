@@ -1,0 +1,39 @@
+<div style="width: 100%; height: 400px" id="mapContainer"></div>
+<script>
+  var platform = new H.service.Platform({
+    'apikey': ''
+  });
+  var defaultLayers = platform.createDefaultLayers();
+  var map = new H.Map(document.getElementById('mapContainer'),
+    defaultLayers.vector.normal.map,{
+    center: {lat:50, lng:5},
+    zoom: 4,
+    pixelRatio: window.devicePixelRatio || 1
+  });
+
+
+// Handling Geo-JSON objects
+// Example geoJSON object
+var geoJsonObject = {
+  'type': 'FeatureCollection',
+  'features': [
+    {
+      'type': 'Feature',
+      'properties': {'name': 'Location A'},
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [5, 50]
+      }
+    }
+  ]
+};
+// Function to add geoJSON to the map
+function addGeoJSONLayer(map, geoJsonObject) {
+  var reader = new H.data.geojson.Reader(geoJsonObject);
+  reader.parse();
+  map.addLayer(reader.getLayer());
+}
+addGeoJSONLayer(map, geoJsonObject);
+
+</script>
+
