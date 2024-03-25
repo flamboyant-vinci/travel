@@ -1,5 +1,5 @@
 # TravelHub
-
+![](travelhub_banner.png)
 **TravelHub** is a cutting-edge Ruby on Rails web application designed to revolutionize the way tourists explore cities. By leveraging the powerful HERE Location Services and Mobile SDKs, TravelHub offers an immersive experience that guides tourists through cities, providing detailed historical information, guided tours, and interactive maps featuring tourist attractions.
 
 ## Features
